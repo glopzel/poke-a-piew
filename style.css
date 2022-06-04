@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    width: 20vmin;
+    margin: 0 auto;
+  }
+  
+  h1, h2, h3, button {
+    font-family: 'VT323', monospace;
+  }
+  
+  button, input {
+    font-size: 1rem;
+    width: 30vmin;
+    padding: 0.5vmin 1vmin;
+  }
+  
+  button {
+    background: white;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  #mainContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 60vmin;
+    min-height: 25vmin;
+    max-height: fit-content;
+    border-bottom-width: 5px;
+    border-top-width: 5px;
+    border-style: double;
+  /*   box-shadow: 5px 5px black; */
+    border-radius: 5px;
+    font-family: 'VT323', monospace;
+    align-items: center;
+    padding: 2vmin;
+  }
+  
+  h3 {
+    text-align: center;
+    margin: 3vmin;
+  }
+  
+  span {
+    display: block;
+    font-size: 1.2rem;
+  }
+  
+  
+  
+  .textAnimation {
+  /*   width: 22ch; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    height: fit-content;
+     overflow: hidden;
+    border-right: 3px solid;
+    
+    
+  /*   font-family: monospace;
+    font-size: 2em; */
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  
