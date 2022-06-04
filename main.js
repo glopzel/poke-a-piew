@@ -25,10 +25,9 @@ function getFetch(){
 
     pokemonName.innerText = name;
     pokeImage.src = data.sprites.front_shiny;
-    
+
     spanWords.innerText = `This pokemon's type is ${typeOfPokemon} and has the ${abilityPokemon} ability`;
 
-    let lengthSaved = spanWords.innerText.length;
     spanWords.classList.add('textAnimation');
   })
   
