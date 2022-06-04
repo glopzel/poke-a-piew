@@ -8,6 +8,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url('images/pokemonbackground.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   img {
@@ -20,6 +30,7 @@
   }
   
   button, input {
+    display: block;
     font-size: 1rem;
     width: 30vmin;
     padding: 0.5vmin 1vmin;
@@ -58,8 +69,6 @@
     display: block;
     font-size: 1.2rem;
   }
-  
-  
   
   .textAnimation {
     display: flex;
