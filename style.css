@@ -43,7 +43,6 @@
     border-bottom-width: 5px;
     border-top-width: 5px;
     border-style: double;
-  /*   box-shadow: 5px 5px black; */
     border-radius: 5px;
     font-family: 'VT323', monospace;
     align-items: center;
@@ -63,7 +62,6 @@
   
   
   .textAnimation {
-  /*   width: 22ch; */
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -72,10 +70,6 @@
     height: fit-content;
      overflow: hidden;
     border-right: 3px solid;
-    
-    
-  /*   font-family: monospace;
-    font-size: 2em; */
   }
   
   @keyframes typing {
