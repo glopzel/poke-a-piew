@@ -14,7 +14,6 @@ function getFetch(){
   
   const url = `https://pokeapi.co/api/v2/pokemon/${pokeFixed}`;
 
-
   fetch(url)
     .then(res => res.json())
     .then(data => {
@@ -27,7 +26,7 @@ function getFetch(){
     pokeImage.src = data.sprites.front_shiny;
 
     spanWords.innerText = `This pokemon's type is ${typeOfPokemon} and has the ${abilityPokemon} ability`;
-
+    
     spanWords.classList.add('textAnimation');
   })
   
