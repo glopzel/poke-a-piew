@@ -4,7 +4,7 @@ const pokeImage = document.querySelector('#pokeImg1');
 
 document.querySelector('input').addEventListener('change', cleanItUp);
 
-document.querySelector('button').addEventListener('click', getFetch);
+document.querySelector('button').addEventListener('click', fetchIt);
 
 async function fetchIt() {
   spanWords.innerText = '';
