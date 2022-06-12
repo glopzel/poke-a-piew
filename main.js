@@ -1,4 +1,4 @@
-const spanWords = document.querySelector('span');
+const pokeDescription = document.querySelector('span');
 const pokemonName = document.querySelector('h3');
 const pokeImage = document.querySelector('#pokeImg1');
 
@@ -7,7 +7,7 @@ document.querySelector('input').addEventListener('change', cleanItUp);
 document.querySelector('button').addEventListener('click', fetchIt);
 
 async function fetchIt() {
-  spanWords.innerText = '';
+  pokeDescription.innerText = '';
 
   const poke1 = document.querySelector('#poke1').value.toLowerCase()
 
@@ -23,15 +23,15 @@ async function fetchIt() {
   pokemonName.innerText = name;
   pokeImage.src = data.sprites.front_shiny;
 
-  spanWords.innerText = `This pokemon's type is ${typeOfPokemon} and has the ${abilityPokemon} ability`;
+  pokeDescription.innerText = `This pokemon's type is ${typeOfPokemon} and has the ${abilityPokemon} ability`;
     
-  spanWords.classList.add('textAnimation');
+  pokeDescription.classList.add('textAnimation');
 
 }
 
 function cleanItUp() {
   pokemonName.innerText = '';
-  spanWords.innerText = '';
+  pokeDescription.innerText = '';
   pokeImage.src = '';
-  spanWords.classList.remove('textAnimation');
+  pokeDescription.classList.remove('textAnimation');
 }
