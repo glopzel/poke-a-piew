@@ -10,7 +10,7 @@ The live site can be found here: https://glopzel.github.io/poke-a-piew/
 
 ## How It's Made
 
-This was made with HTML, CSS and JS. The text effect was used with an animation that takes the container of the text starting from 0% and increases the width till it gets to 100%. Since all variations of pokemon might result in a different container size for the text, the number of steps was set fixed to 22. The data from the API was obtained using fetch, passing the url with the name of the pokemon after the endpoint `/pokemon/{pokeName}` .
+This was made with HTML, CSS and JS. The text effect was used with an animation that takes the container of the text starting from 0% width and increases it until it gets to 100%. The steps are set in a CSS variable so it changes according to the length of the text. The data from the API was requested using fetch method, passing the url with the name of the pokemon after the endpoint `/pokemon/{pokeName}` .
 - pokemon endpoint: `https://pokeapi.co/api/v2/pokemon/{id or name}/` 
 - documentation: https://pokeapi.co/docs/v2
 
