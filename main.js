@@ -1,6 +1,7 @@
 const pokeDescription = document.querySelector('span');
 const pokemonName = document.querySelector('h3');
 const pokeImage = document.querySelector('#pokeImg1');
+const roots = document.documentElement;
 
 document.querySelector('input').addEventListener('change', cleanItUp);
 
@@ -24,6 +25,10 @@ async function fetchIt() {
   pokeImage.src = data.sprites.front_shiny;
 
   pokeDescription.innerText = `This pokemon's type is ${typeOfPokemon} and has the ${abilityPokemon} ability`;
+
+  let textLength = pokeDescription.innerText.length
+
+  roots.style.setProperty('--steps-number', `${textLength}`);
     
   pokeDescription.classList.add('textAnimation');
 

@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
   }
+
+  :root {
+    --steps-number: 22;
+  }
   
   body {
     height: 100vh;
@@ -87,7 +91,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    animation: typing 5s steps(var(--steps-number)), blink .5s step-end infinite alternate;
     white-space: nowrap;
     height: fit-content;
      overflow: hidden;
