@@ -23,13 +23,11 @@ main {
   justify-content: center;
   align-items: center;
   padding: 2vmin;
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7.1px);
-  -webkit-backdrop-filter: blur(7.1px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
 }
 
 img {
@@ -52,16 +50,26 @@ input {
   padding: 0.5vmin 1vmin;
 }
 
-button:hover {
-  background: greenyellow;
+main div {
+  display: flex;
 }
 
 button {
-  background: white;
+  width: 15vmin;
 }
 
 button:hover {
+  background: white;
   cursor: pointer;
+}
+
+#go:hover {
+  background: greenyellow;
+}
+
+#reset:hover {
+  color: white;
+  background: red;
 }
 
 #mainContainer {

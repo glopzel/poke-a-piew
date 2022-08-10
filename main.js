@@ -3,9 +3,9 @@ const pokemonName = document.querySelector('h3');
 const pokeImage = document.querySelector('#pokeImg1');
 const roots = document.documentElement;
 
-document.querySelector('input').addEventListener('change', cleanItUp);
+document.querySelector('#reset').addEventListener('click', cleanItUp);
 
-document.querySelector('button').addEventListener('click', fetchIt);
+document.querySelector('#go').addEventListener('click', fetchIt);
 
 async function fetchIt() {
   pokeDescription.innerText = '';
@@ -35,6 +35,7 @@ async function fetchIt() {
 }
 
 function cleanItUp() {
+  document.querySelector('#poke1').value = '';
   pokemonName.innerText = '';
   pokeDescription.innerText = '';
   pokeImage.src = '';
